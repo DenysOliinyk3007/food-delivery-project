@@ -1,0 +1,131 @@
+.customers {
+  background-image: url('../img/customers-mob-back-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.customers-dscr {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.customers-global-box {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.customers-box {
+  background-color: #fff;
+  padding: 8px;
+
+  border-radius: 0px 30px 30px 30px;
+}
+
+.stars-wrap {
+  display: flex;
+  gap: 4px;
+}
+
+.customers-use {
+  fill: #ffe550;
+}
+
+.customers-box-text {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 28px;
+  margin-bottom: 40px;
+}
+
+.customers-user-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.customers-user-img {
+  max-width: 48px;
+}
+
+.customers-name-list {
+  padding-right: 16px;
+  border-right: 0.85px solid #7eb101;
+}
+
+.customers-name-item,
+.customers-position-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .customers {
+    background-image: url('../img/customers-tab-back-1x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 120px;
+  }
+
+  .customers-title {
+    font-size: 42px;
+  }
+
+  .customers-dscr {
+    font-size: 16px;
+  }
+
+  .customers-global-box {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .customers-box {
+    padding: 12px;
+    max-width: 336px;
+  }
+
+  .customers-box-text {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .customers {
+    background-image: url('../img/customers-desk-back-1x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .customers-box {
+    padding: 14px;
+    max-width: 501px;
+  }
+
+  .customers-use {
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      fill: #ffbb00;
+      transform: scale(0.9);
+    }
+  }
+}
