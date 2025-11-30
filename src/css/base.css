@@ -1,32 +1,61 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	--button-green: #bbf330;
+	--dark-green: #7eb101;
+	--yellow-main: #ffe550;
+	--black: #2c2c2c;
+	--white: #fefefe;
+	--2: #a7ce47;
+	--tekst: #3d3d3d;
+	--tekst2: #969696;
+	--tekst3: #4a4a4a;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Kalam", sans-serif;
+    --third-family: "Inter", sans-serif;
 }
+
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-}
-
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
-}
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        color: var(--black);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black);
+  }
+  
+  button {
+    border: none;
+  }
+  
+  @media (min-width: 1440px) {
+    :root {
+      --font-size-h1: 48px;
+      --font-size-h2: 36px;
+      --font-size-h3: 24px;
+    }
+  
+    body {
+      font-size: 18px;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 48px;
+    }
+  }
