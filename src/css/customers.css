@@ -1,8 +1,8 @@
 .customers {
   background-image: url('../img/customers-mob-back-1x.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: center bottom;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -74,7 +74,7 @@
   .customers {
     background-image: url('../img/customers-tab-back-1x.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     padding-bottom: 120px;
   }
