@@ -89,8 +89,8 @@
 
   .customers-global-box {
     flex-direction: row;
-    justify-content: center;
-    gap: 32px;
+    justify-content: left;
+    gap: 139px;
   }
 
   .customers-box {
@@ -108,8 +108,8 @@
   .customers {
     background-image: url('../img/customers-desk-back-1x.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center bottom;
     padding-top: 100px;
     padding-bottom: 200px;
   }
