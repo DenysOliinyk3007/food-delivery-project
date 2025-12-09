@@ -1,3 +1,7 @@
+.offers-section {
+  margin-top: -43px;
+}
+
 .offers-container {
   display: flex;
   flex-direction: column;
@@ -60,48 +64,66 @@
 }
 /*-----------Tablet---------  */
 @media screen and (min-width: 768px) {
+  .offers-section {
+    margin-top: -74px;
+  }
+
   .offers-container {
     align-items: flex-start;
   }
+
   .offers-image-container {
     align-self: flex-end;
     margin-bottom: 20px;
   }
+
   .offers-text-container {
     max-width: 656px;
   }
+
   .offers-header {
     font-size: 42px;
   }
+
   .offers-text {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 24px;
   }
+
   .offers-interact {
     flex-direction: row;
     gap: 24px;
   }
+
   .offers-input {
     width: 394px;
   }
+
   .offers-button {
     align-self: flex-start;
   }
 }
 /*-----------Desktop---------  */
 @media screen and (min-width: 1200px) {
+  .offers-section {
+    margin-top: -66px;
+  }
+
   .offers-container {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
+
   .offers-interact {
     gap: 24px;
   }
+
   .offers-input {
     width: 395px;
   }
+
   .offers-button {
   }
 }
