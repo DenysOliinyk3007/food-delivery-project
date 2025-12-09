@@ -1,11 +1,39 @@
 <section>
-  <div class="container offers container">
-    <h2>Subscribe To Get Special Offers</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <input type="text" placeholder="Enter your email" />
-    <button>Subscribe</button>
+  <div class="container offers-container">
+    <div class="offers-image-container">
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          srcset="
+            ./img/offers-desktop-1x.webp 1x,
+            ./img/offers-desktop-2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/offers-tablet-1x.webp 1x,
+            ./img/offers-tablet-2x.webp 2x
+          "
+        />
+        <img src=./img/offers-mobile-1x.webp srcset="./img/offers-mobile-2x.webp
+        2x" alt="banana" class="offers-image" loading="lazy" />
+      </picture>
+    </div>
+    <div class="offers-text-container">
+      <h2 class="offers-header">Subscribe To Get Special Offers</h2>
+      <p class="offers-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <div class="offers-interact">
+        <input
+          class="offers-input"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <button class="offers-button">Subscribe</button>
+      </div>
+    </div>
   </div>
 </section>
