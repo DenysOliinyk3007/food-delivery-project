@@ -1,0 +1,167 @@
+.offers-section {
+  margin-top: -43px;
+}
+
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers-image-container {
+  margin-bottom: 17px;
+}
+.offers-image {
+  min-width: 280px;
+  min-height: 78px;
+}
+
+.offers-header {
+  display: block;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  min-width: 280px;
+}
+
+.offers-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2c2c2c;
+  margin-bottom: 40px;
+}
+
+.offers-interact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offers-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.offers-input {
+  background-color: #fff;
+  border: 0.85px solid;
+  border-radius: 30px;
+  padding: 12px 11px;
+  width: 279px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.offers-input-default {
+  border-color: #ffe550;
+}
+
+.offers-input-right {
+  border-color: #7eb101;
+}
+
+.offers-input-error {
+  border-color: #ff705d;
+}
+
+.offers-input:focus,
+.offers-input:active {
+  outline: none;
+}
+
+.offers-hidden {
+  display: none;
+}
+
+.offers-warning {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #ff705d;
+}
+
+.offers-button {
+  border-radius: 30px;
+  padding: 11px 22px;
+  background-color: #bbf330;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  align-self: flex-end;
+}
+
+.offers-button:hover,
+.offers-button:active {
+  background-color: #b5ff00;
+}
+/*-----------Tablet---------  */
+@media screen and (min-width: 768px) {
+  .offers-section {
+    margin-top: -74px;
+  }
+
+  .offers-image-container {
+    margin-bottom: 20px;
+    margin-left: 423px;
+  }
+
+  .offers-text-container {
+    max-width: 656px;
+  }
+
+  .offers-header {
+    font-size: 42px;
+  }
+
+  .offers-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .offers-interact {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .offers-input {
+    width: 394px;
+  }
+
+  .offers-button {
+    align-self: flex-start;
+  }
+}
+/*-----------Desktop---------  */
+@media screen and (min-width: 1440px) {
+  .offers-section {
+    margin-top: -66px;
+  }
+
+  .offers-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .offers-image-container {
+    margin-left: 0;
+  }
+
+  .offers-interact {
+    gap: 24px;
+  }
+
+  .offers-input {
+    width: 395px;
+  }
+
+  .offers-button {
+  }
+}

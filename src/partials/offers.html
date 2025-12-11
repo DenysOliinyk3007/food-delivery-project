@@ -1,1 +1,46 @@
-<p>OFFERS</p>
+<section class="offers-section">
+  <div class="container offers-container">
+    <div class="offers-image-container">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./img/offers-desktop-1x.webp 1x,
+            ./img/offers-desktop-2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/offers-tablet-1x.webp 1x,
+            ./img/offers-tablet-2x.webp 2x
+          "
+        />
+        <img src=./img/offers-mobile-1x.webp srcset="./img/offers-mobile-2x.webp
+        2x" alt="banana" class="offers-image" loading="lazy" />
+      </picture>
+    </div>
+    <div class="offers-text-container">
+      <h2 class="offers-header">Subscribe To Get Special Offers</h2>
+      <p class="offers-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <div class="offers-interact">
+        <label for="offers-input" class="offers-label">
+          <input
+            id="offers-input"
+            class="offers-input offers-input-default"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <span class="offers-hidden"
+            ><span>&#9888;</span> Not a valid email address
+            (example@email.com)</span
+          >
+        </label>
+        <button class="offers-button" type="button">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
