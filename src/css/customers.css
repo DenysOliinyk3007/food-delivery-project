@@ -1,8 +1,8 @@
-.customers {
+.customers-container {
   background-image: url('../img/customers-mob-back-1x.png');
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center bottom;
+  background-size: cover;
+  background-position: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -28,7 +28,6 @@
 .customers-box {
   background-color: #fff;
   padding: 8px;
-
   border-radius: 0px 30px 30px 30px;
 }
 
@@ -70,12 +69,39 @@
   line-height: 1.5;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .customers-container {
+    background-image: url('../img/customers-mob-480.png');
+    background-size: cover;
+    padding-bottom: 130px;
+    max-width: 480px;
+  }
+
+  .customers-global-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customers-box {
+    padding: 10px;
+    max-width: 400px;
+  }
+
+  .customers-container h2,
+  .customers-container p {
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  .customers {
+  .customers-container {
     background-image: url('../img/customers-tab-back-1x.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    padding-top: 80px;
     padding-bottom: 120px;
   }
 
@@ -90,12 +116,13 @@
   .customers-global-box {
     flex-direction: row;
     justify-content: left;
-    gap: 139px;
+    gap: 32px;
   }
 
   .customers-box {
     padding: 12px;
-    max-width: 336px;
+    width: 336px;
+    flex-shrink: 0;
   }
 
   .customers-box-text {
@@ -105,18 +132,24 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .customers {
+  .customers-container {
     background-image: url('../img/customers-desk-back-1x.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center bottom;
+    background-size: cover;
+    background-position: center;
     padding-top: 100px;
     padding-bottom: 200px;
+    min-width: 1280px;
+  }
+
+  .customers-global-box {
+    gap: 139px;
   }
 
   .customers-box {
     padding: 14px;
-    max-width: 501px;
+    width: 501px;
+    flex-shrink: 0;
   }
 
   .customers-use {
