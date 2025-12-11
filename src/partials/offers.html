@@ -3,7 +3,7 @@
     <div class="offers-image-container">
       <picture>
         <source
-          media="(min-width:1200px)"
+          media="(min-width: 1440px)"
           srcset="
             ./img/offers-desktop-1x.webp 1x,
             ./img/offers-desktop-2x.webp 2x
@@ -27,12 +27,19 @@
         varius enim in eros elementum tristique.
       </p>
       <div class="offers-interact">
-        <input
-          class="offers-input"
-          type="text"
-          placeholder="Enter your email"
-        />
-        <button class="offers-button">Subscribe</button>
+        <label for="offers-input" class="offers-label">
+          <input
+            id="offers-input"
+            class="offers-input offers-input-default"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <span class="offers-hidden"
+            ><span>&#9888;</span> Not a valid email address
+            (example@email.com)</span
+          >
+        </label>
+        <button class="offers-button" type="button">Subscribe</button>
       </div>
     </div>
   </div>
