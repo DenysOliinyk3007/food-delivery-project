@@ -1,1 +1,44 @@
-<p>HEADER</p>
+<header class="header">
+  <div class="container">
+    <a class="logo-link" href="index.html" aria-label="header-logo-link">
+      <svg class="logo-svg" width="66" height="52">
+        <use href="/img/sprite.svg#icon-Logo-food"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li>
+          <a href="./index.html" class="header-list-item current">Home</a>
+        </li>
+        <li><a href="#offers" class="header-list-item">About</a></li>
+        <li><a href="#special" class="header-list-item">Service</a></li>
+        <li><a href="#favorites" class="header-list-item">Menu</a></li>
+        <li><a href="#footer" class="header-list-item">Contact</a></li>
+      </ul>
+      <button type="button" class="header-btn">Order now</button>
+    </nav>
+
+    <button type="button" class="menu-toggle" aria-label="Open menu">
+      <svg class="menu-icon" width="28" height="28">
+        <use href="/img/sprite.svg#icon-gg_menu"></use>
+      </svg>
+    </button>
+
+    <!-- Мобильное меню-селект -->
+    <div class="custom-select" id="mobileMenu">
+      <!-- Крестик -->
+      <button class="close-btn" aria-label="Close menu">
+        <svg width="30" height="32">
+          <use href="/img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <!-- Ссылки -->
+      <a href="./index.html" class="header-list-item">Home</a>
+      <a href="#offers" class="header-list-item">About</a>
+      <a href="#special" class="header-list-item">Service</a>
+      <a href="#favorites" class="header-list-item">Menu</a>
+      <a href="#footer" class="header-list-item">Contact</a>
+    </div>
+  </div>
+</header>
